@@ -1,5 +1,6 @@
+/* no presymbol for tags */
 /* . is for class used multiple times*/
-
+/* # is for id used once */
 main {
   background: white;
   height: 52rem;
@@ -16,46 +17,13 @@ main div {
   margin-bottom: 100px;
   text-align: center;
 }
-
-.altImage {
-  font-size: 92px;
-  font-family: arial, sans-serif;
-}
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  line-height: 40px;
-  background-color: #f2f2f2;
-  border-top: 1px solid #e4e4e4;
-  /* color: black; */
-  float: left;
-}
-.footer-left {
-  margin: 0x;
-  padding: 6px;
-  padding-left: 27px;
-  color: #5f6368;
-  font-size: 14px;
-  line-height: 40px;
-  font-family: arial, sans-serif;
-  float: left;
-}
-.footer-right {
-  margin: 0x;
-  padding: 6px;
-  padding-right: 27px;
-  color: #5f6368;
-  font-size: 14px;
-  line-height: 40px;
-  font-family: arial, sans-serif;
-  float: right;
-}
-/* # is for id used once */
 #logo {
   text-align: center;
   height: 92px;
+}
+.altImage {
+  font-size: 92px;
+  font-family: arial, sans-serif;
 }
 #searchBar {
   padding: 0;
@@ -67,20 +35,27 @@ main div {
   height: 44px;
   margin: 0 auto;
 }
+#searchBar:hover {
+  box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
+  border-color: rgba(223, 223, 229, 0);
+}
 #inputBar {
   width: 482px;
   margin: 0 50px;
   border: none;
-  color: #5f6368;
-  font-size: 14px;
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 16px;
   font-family: arial, sans-serif;
+}
+#inputBar:focus {
+  outline: none;
 }
 #button {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-button {
+.searchButtons {
   background-color: #f2f2f2;
   border: 1px solid #f2f2f2;
   border-radius: 4px;
@@ -97,19 +72,45 @@ button {
   cursor: pointer;
   user-select: none;
 }
-
-/* no presymbol for tags*/
-button:hover {
+.searchButtons:hover {
   cursor: pointer;
   border-color: #c6c6c6;
 }
-#searchBar:hover {
-  box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
-  border-color: rgba(223, 223, 229, 0);
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  line-height: 40px;
+  background-color: #f2f2f2;
+  border-top: 1px solid #e4e4e4;
+  float: left;
+}
+.footer-left {
+  margin: 0x;
+  padding: 6px;
+  padding-left: 27px;
+  color: #5f6368;
+  font-size: 14px;
+  line-height: 40px;
+  font-family: arial, sans-serif;
+  float: left;
 }
 .footer-left:hover {
   cursor: pointer;
   text-decoration: underline;
+}
+
+.footer-right {
+  margin: 0x;
+  padding: 6px;
+  padding-right: 27px;
+  color: #5f6368;
+  font-size: 14px;
+  line-height: 40px;
+  font-family: arial, sans-serif;
+  float: right;
 }
 .footer-right:hover {
   cursor: pointer;
